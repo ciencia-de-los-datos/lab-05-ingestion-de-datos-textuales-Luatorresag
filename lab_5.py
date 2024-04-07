@@ -4,7 +4,7 @@ import glob
 import pandas as pd
 
 
-def extract_file(compress_file: str, output_directory: str) -> None:
+def extract_file(compress_file: str, output_directory: str) -> None: #funcion para descomprimir el archivo 
 
     if not os.path.exists(compress_file):
         raise Exception("No existe el archivo")
