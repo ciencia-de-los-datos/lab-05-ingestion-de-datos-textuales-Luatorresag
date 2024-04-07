@@ -56,6 +56,7 @@ def main():
     save(df_test, "test_dataset.csv")
     save(df_train, "train_dataset.csv")
 
+    return save
 
 if __name__ == "__main__":
     main()
