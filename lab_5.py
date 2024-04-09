@@ -60,5 +60,3 @@ def main():
 if __name__ == "__main__":
     main()
 
-test_dataset = pd.read_csv("test_dataset.csv")
-print(test_dataset["sentiment"].value_counts())
