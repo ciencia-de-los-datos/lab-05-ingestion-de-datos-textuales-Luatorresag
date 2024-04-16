@@ -37,6 +37,7 @@ A partir de esta informacion debe generar dos archivos llamados "train_dataset.c
 "test_dataset.csv". Estos archivos deben tener la siguiente estructura:
 
 * phrase: Texto de la frase. hay una frase por cada archivo de texto.
+  
 * sentiment: Sentimiento de la frase. Puede ser "positive", "negative" o "neutral". Este corresponde al nombre del directorio donde se encuentra ubicado el archivo.
 
 Cada archivo tendria una estructura similar a la siguiente:
