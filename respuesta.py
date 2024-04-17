@@ -4,8 +4,15 @@ import glob
 import pandas as pd
 
 
-def extract_file(compress_file: str, output_directory: str) -> None: 
-
+def extract_file(compress_file: str, output_directory: str) -> None:
+    """
+    descomprimir archivo
+        parametros:
+            compress_file: ruta del archivo .zip para descomprimir
+            output directory: directorio para alojar el archivo descomprimido
+        return:
+            None
+    """
     if not os.path.exists(compress_file):
         raise Exception("No existe el archivo")
 
@@ -30,7 +37,17 @@ def get_list_data(files):
 
 
 def save(data, name_file, path=None):
+    """
+    Saves the given data to a CSV file.
 
+    Parameters:
+    - data: The data to be saved.
+    - name_file: The name of the CSV file.
+    - path: Optional. The path where the file will be saved. If not provided, the file will be saved in the current directory.
+
+    Returns:
+    None
+    """
     if path:
         if not os.path.exists(path):
             os.mkdir(path)
@@ -59,4 +76,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
